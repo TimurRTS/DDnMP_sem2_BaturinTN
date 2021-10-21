@@ -32,6 +32,11 @@ int main (void)
 		array = array_treatment(array_original, sizeof(array_original)/sizeof(int32_t)); /* fun 4*/
 		array = array_treatment(array_original, sizeof(array_original)/sizeof(int32_t)); /* fun 5*/
 		array = array_treatment(array_original, sizeof(array_original)/sizeof(int32_t)); /* fun 6*/
+	
+			array = array_treatment(array_original, sizeof(array_original)/sizeof(int32_t)); /* fun 4*/
+		array = array_treatment(array_original, sizeof(array_original)/sizeof(int32_t)); /* fun 5*/
+		array = array_treatment(array_original, sizeof(array_original)/sizeof(int32_t)); /* fun 6*/
+	
 	array_treatment_asm(array_original, sizeof(array_original), new_array); // переход в асемблер 
 
 	while (1)
