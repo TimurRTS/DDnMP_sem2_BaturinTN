@@ -26,8 +26,8 @@ int main (void)
 	Функция возвратит указатель на массив соответствующий заданию. 
 	Размерность массива такая же как у оригинального массива.*/
     
-	array = array_treatment(array_original, sizeof(array_original)/sizeof(int32_t));
-	
+	array = array_treatment(array_original, sizeof(array_original)/sizeof(int32_t)); /*Fun 1*/
+	array = array_treatment(array_original, sizeof(array_original)/sizeof(int32_t)); /* fun 2*/
 	array_treatment_asm(array_original, sizeof(array_original), new_array); // переход в асемблер 
 
 	while (1)
